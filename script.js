@@ -1,8 +1,7 @@
 const byteSize = (str) => {
-  write your code here
-	const blob = new Blob([str]);
-  // Get the size property of the Blob to retrieve the byte size
-  return blob.size;
+   const encoder = new TextEncoder('utf-8');
+    const encodedBytes = encoder.encode(str);
+    return encodedBytes.length;
 };
 
 // Do not change the code below
